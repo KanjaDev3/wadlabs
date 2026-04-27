@@ -20,7 +20,7 @@ php/
 
 ## The Adventurer (Me)
 
-<h2 align="center">YOUR_NAME</h2>
+<h2 align="center">Kanja Ryan</h2>
 <table>
   <tbody>
     <tr>
@@ -32,9 +32,9 @@ php/
     <tr>
       <td>
         <ul>
-          <li>YOUR_PREFERRED_NAME (How should I call you)</li>
-          <li>YOUR_STRATHMORE_Admission_number</li>
-          <li>YOUR_STRATHMORE_EMAIL</li>
+          <li>Kanja Ryan</li>
+          <li>220778</li>
+          <li>ryan.kanja@strathmore.edu</li>
         </ul>
       </td>
     </tr>
