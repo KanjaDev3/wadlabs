@@ -1,0 +1,78 @@
+<!DOCtype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Forms 101</title>
+    </head>
+    <body>
+        <section id="simple-form">
+            <h2>Simple Form</h2>
+            <!-- the form element-->
+             <form method="get"
+                action="process.php"
+                enctype="text/plain"
+                id="simple form"
+                name="somple form"
+                class="forms"
+                class="form-group">
+                <label for="username">Username</label>
+                <input type="text" name="username"
+                id="username">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="password">
+            </div>
+            <div class="form-group">
+                <input type="submit" name="login" value="login">
+                <input type="reset" name="reset" name="Clear">
+            </div>
+             </form>
+        </section>
+        <section id="chicken-recipe-form">
+            <h2>Chicken Recipe</h2>
+            <form method="post" action="precess2.php">
+                <div class="form-group">
+                    <label for="recipe-title">
+                        Recipe Title
+                        </label>
+                        <input id="Chicken-recipe" type="text"
+                        name="recipe-title"
+                        required> 
+                </div>
+            </form>
+        </section>
+        <section id="chicken-recipe-form">
+            <form method="post" action="precess2.php">
+                <div class="form-group">
+                    <label for="dry-ingredients">
+                        Dry Ingredients
+                        </label>
+                        <input id="Dry-ingredients" type="checkbox"
+                        name="dry-ingredients" value=""
+                        required> salt
+                        <input id="cayene" type="checkbox"
+                        name="dry-ingredients" value="cayene"
+                        required> cayene
+                        <input id="thyme" type="checkbox"
+                        name="dry-ingredients" value="thyme"
+                        required> thyme 
+                <div>
+                    <div class="form group">
+                        <label for="grilled">Grilled</label>
+                        <input name="grilled" id="grilled-no"
+                        value="0" type="radio"> No
+                        <input name="grilled" id="grilled-yes"
+                        value="1" type="radio"> Yes
+                </div>
+                <div class="form group">
+                    <label for="Steps">Steps</label>
+                    <textarea name="steps" id="steps"></textarea>
+                </div>
+                <div class="form group">
+                    <input type="submit" name="submit">
+                    <input type="reset" name="reset">
+                </div>
+         <section>
+    </body>
+</html>
