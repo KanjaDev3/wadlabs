@@ -1,45 +1,110 @@
-<doctype html>
+<!doctype html>
+ <!-- the root element -->
+<html lang="en">
+<!--head-->
+<head>
+    <!--meta elements-->
+    <meta charset="utf-8">
+    <meta name="author"content="BBIT">
+    <meta name="description"content="Your ultimate GTA 6 fan page featuring the latest news, trailers, gameplay details, map leaks, characters, release updates, and community discussions for Grand Theft Auto VI. Stay updated with everything GTA 6">
+    <meta name="keywords"content="GTA 6, Grand Theft Auto VI, GTA VI, GTA 6 news, GTA 6 trailer, GTA 6 gameplay, GTA 6 release date, Rockstar Games, Vice City, GTA 6 map, GTA 6 characters, GTA 6 leaks, GTA 6 updates, GTA 6 fan page, Grand Theft Auto 6">
+    <!--title-->
+    <title>GTA VI</title>
+    <!-- embedded styles-->
+    <style>
+        /* an element selector*/
+        /* example h1, we are selecting all heading one's on this page*/
+        /* <h1>h1, <div>div, main, p, footer*/
+            h1{
+                color:blue;
+                font-size: 50px;
+            }
+            
+            .section-heading{
+                color: green;;
+            }
+           
+            #about{
+                background-color:aliceblue;
+            }
+            #features{
+                background-color: beige;
+            }
 
-    <html lang="en">
+    </style>
+    <!--link to external css file-->
+    <link rel="stylesheet" href="css/style/style.css">
+</head>
+<!--6. the body (content goes here)-->
 
-    <head>
-        
-        <meta charset="utf-8">
-        <meta name="author" content="BBIT">
-        <meta name="description" content="Your ultimate GTA 6 fan page features"> 
-        <meta name="keywords" content="GTA 6, GRAND THEFT AUTOVI, GTA V">
-
-        <title>GTA VI</title>
-    </html>
-    <body>
-       <!-- Add header semantic tag -->
+<body>
+<!-- Add header semantic tag -->
 <!-- Add main heading -->
 <!-- Make "Rockstar Games" bold -->
-Grand Theft Auto VI
-The next generation open-world crime game by Rockstar Games.
-
+ <header style="background: lightcoral;">
+ <h1>Grand Theft Auto VI</h1>
+     <p>The next generation open-world crime game by<strong> Rockstar Games</strong>.</p>
+    </header>
 <!-- Add navigation semantic tag -->
 <!-- Convert items into an unordered list -->
 <!-- Wrap each item in a link -->
 <!-- Add id links pointing to sections -->
 Navigation
-About GTA 6
-Features
-Characters
+<nav>
+    <!--unordered list-->
+    <ul>
+        <li><a href="#about">About GTA 6</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#characters">Characters</a></li>
+        <li><a href="https://www.rockstargames.com/games/V" target="_blank">Official page</a></li>
+    </ul>
+</nav>
 
 <!-- Add main semantic tag -->
+ <main> 
+    <!--Add section with id=""-->
+    <section id="about" name="about">
+        <h2 class="section heading">About the Game</h2>
+        <p><strong>GTA 6</strong> is expected to take players back to <em>Vice City</em> with a massive open world, new characters, and improved gameplay mechanics.</p>
+        <p title="This is additional information about the game.">This paragraph includes an example of an attribute (tooltip text).</p>
+    </section>
+    <section id="features">
+        <h2>Expected Features</h2>
+        <h4>Gameplay Features</h4>
+        <ul>
+            <li>Open world exploration</li>
+            <li>Dynamic weather system</li>
+            <li>Multiple playable characters</li>
+            <li>Improved AI</li>
+        </ul>
+        
+  <h4>New Improvements</h4>
+        <ol>
+            <li>Better graphics</li>
+            <li>Larger map</li>
+            <li>Realistic NPC behavior</li>
+            <li>Enhanced vehicles</li>
+        </ol>
+    </section>
+        <section>
+        <section id="characters">
+            <h2>Main Characters</h2>
+            <article>
+    <h3>Lucia</h3>
+                <p><strong>Lucia</strong> is one of the first female protagonists in GTA history. She is known for her bold personality and criminal background.</p>
+            </article>
+            <article>
+                <h3>Jason</h3>
+                <p><em>Jason</em> partners with Lucia in a story inspired by <i>Bonnie and Clyde</i>-style adventures.</p>
+            </article>
+        </section>
+         <section id="logo">
+        <h2>Game Preview</h2>
+        <img src="https://www.rockstargames.com/VI/_next/image?url=%2FVI%2F_next%2Fstatic%2Fmedia%2FJason_and_Lucia_01_With_Logos_landscape.8596f77a.jpg&w=3840&q=75" alt="GTA 6 Logo image " width="400">
 
-<!-- Add section with id="about" -->
-<!-- Add section heading -->
-<!-- Add paragraphs -->
-<!-- Make "GTA 6" bold -->
-<!-- Make "Vice City" italic -->
-<!-- Add title attribute to second paragraph -->
-About the Game
-GTA 6 is expected to take players back to Vice City with a massive open world, new characters, and improved gameplay mechanics.
-This paragraph includes an example of an attribute (tooltip text).
+    </main>
 
-<!-- Add section with id="features" -->
+    <!-- Add section with id="features" -->
 <!-- Add subsection headings -->
 <!-- Convert first group into unordered list -->
 <!-- Convert second group into ordered list -->
@@ -80,8 +145,13 @@ GTA 6 Logo image
 <!-- Close main semantic tag -->
 
 <!-- Add footer semantic tag -->
+ <footer>     </footer>
 <!-- Wrap content in paragraph -->
 <!-- Add horizontal rule above footer -->
-© 2026 GTA 6 Fan Page | Created for HTML Learning
-    </body>
+<footer>
+    <hr>
+    <p>&copy; 2024 GTA 6 Fan Site. All rights reserved.</p>
+</footer>
+
+</body>
 </html>
