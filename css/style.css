@@ -1,4 +1,36 @@
-/*an external css file*/
-#features{
-    background-color: beige;
+  h1{
+                color:blue;
+                font-size: 50px;
+            }
+            
+            .section-heading{
+                color: green;;
+            }
+           
+            #about{
+                background-color:aliceblue;
+            }
+            #features{
+                background-color: rgb(251, 251, 153);
+            }
+
+ body,header,h1,section{
+    border-style: dotted;
+    border-color: turquoise;
+    border-width: 2px;
+}
+h1{
+    /*long hand*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    /*shorthand*/
+    padding: 10px;
+    /*TRouBLe*/
+    padding: 5px 10px 13px 50px;
+    
+    /*this applys to all the four margins*/
+    margin-top: 5px;
+
 }
