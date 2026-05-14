@@ -16,10 +16,10 @@ It is the highest-level element on the page.
 Variables defined here become available everywhere in the stylesheet.
 */
 
-h1{
-    color:#ff0000;
-    background-color: rgb(0,0,0);
-    border-color: rgba(255,0,0,0.1);
+h1 {
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+    border-color: rgba(255, 255, 255, 0.1);
 }
 
 :root {
@@ -70,10 +70,13 @@ h1{
     --col-muted: #7ea0b3;
 }
 
-/*
-example usage
-using the var keyword*/
-
-body{
-color: var(--col-coral)
+body {
+    font-family: 'Instrument Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 400;/*normal, bold...*/
+    font-style: normal;
+}
+/*group selector*/
+h1, h2{
+    font-family: 'Young Serif', serif;
 }
