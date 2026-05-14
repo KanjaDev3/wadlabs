@@ -1,36 +1,79 @@
-  h1{
-                color:blue;
-                font-size: 50px;
-            }
-            
-            .section-heading{
-                color: green;;
-            }
-           
-            #about{
-                background-color:aliceblue;
-            }
-            #features{
-                background-color: rgb(251, 251, 153);
-            }
+/* ============================================================
+   GTA VI FAN PAGE COLOR SYSTEM
+   Inspired by the official GTA VI visual style
+   ============================================================ 
+  
+   CSS Colors
+    - named e.g. blue, green (limited)
+    - hex - use hexadecimal values (0-9A-F) e.g. #RRGGBB #FFFFFF(white), #000000(black) - (Most common in web design)
+    - rgb - use 0-255 e.g. rgb(255,255,255) -white, rgb(0,0,0) - black
+    - rgba same as rgb but includes a transparency value between 0-1 (0 = invisible 1 = fully visible) (last item) e.g rgba(25,55,66,0.5) 
+*/
 
- body,header,h1,section{
-    border-style: dotted;
-    border-color: turquoise;
-    border-width: 2px;
-}
+/*
+:root targets the <html> element.
+It is the highest-level element on the page.
+Variables defined here become available everywhere in the stylesheet.
+*/
+
 h1{
-    /*long hand*/
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    /*shorthand*/
-    padding: 10px;
-    /*TRouBLe*/
-    padding: 5px 10px 13px 50px;
-    
-    /*this applys to all the four margins*/
-    margin-top: 5px;
+    color:#ff0000;
+    background-color: rgb(0,0,0);
+    border-color: rgba(255,0,0,0.1);
+}
 
+:root {
+
+    /* ===============================
+       BACKGROUND COLORS
+       =============================== */
+
+    /* Deep night blue */
+    --col-bg-deep: #08131f;
+
+    /* Main dark surface */
+    --col-bg-mid: #102030;
+
+    /* Transparent glass effect */
+    --col-bg-light: rgba(16, 32, 48, 0.82);
+
+    /* ===============================
+       PRIMARY ACCENT COLORS
+       =============================== */
+
+    /* Neon cyan */
+    --col-cyan: #00d5d8;
+
+    /* Bright electric cyan */
+    --col-cyan-light: #4ff6ea;
+
+    /* GTA VI pink/coral */
+    --col-coral: #ff4f87;
+
+    /* Soft neon pink */
+    --col-pink-soft: #ff9bb3;
+
+    /* Sunset orange */
+    --col-sunset: #ff9f43;
+
+    /* Warm amber */
+    --col-amber: #ffc46b;
+
+    /* ===============================
+       TEXT COLORS
+       =============================== */
+
+    /* Main light text */
+    --col-cream: #fff8f2;
+
+    /* Secondary muted text */
+    --col-muted: #7ea0b3;
+}
+
+/*
+example usage
+using the var keyword*/
+
+body{
+color: var(--col-coral)
 }
