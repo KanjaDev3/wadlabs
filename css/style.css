@@ -72,11 +72,59 @@ h1 {
 
 body {
     font-family: 'Instrument Sans', sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 400;/*normal, bold...*/
-    font-style: normal;
+    background-color: var(--col-cream);
+    /*shorthand*/
+    margin: 0;
+    /*long hand*/
+    margin-top:0;
+    margin-right:0;
+    margin-bottom:0;
+    margin-left:0;
+
+    line-height: 1.7;
 }
 /*group selector*/
 h1, h2{
     font-family: 'Young Serif', serif;
+}
+
+header {
+        /*box model (padding)*/
+    padding-top: 5px;
+    padding-bottom: 20px;
+
+    /*box model (Border)*/
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--col-cyan);
+
+    text-align:center;
+
+}
+
+header h1 {
+    /*
+        Units
+    */    
+    font-size: 3.5rem; /*3.5*a6px  ,parent font size */
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color: var(--col-coral);
+
+
+    margin-left: 8px;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-right: 0;
+
+}
+/*
+  descendant selector
+*/
+header > b{
+    color: var(--col-amber);
+    letter-spacing: 2px;
+    font-size: 0.9em; /* relative to the parent font size*/
 }
