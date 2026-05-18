@@ -128,3 +128,47 @@ header > b{
     letter-spacing: 2px;
     font-size: 0.9em; /* relative to the parent font size*/
 }
+
+nav {
+    margin-top: 10px;
+
+}
+ /*what selector is this? = Short hand selector*/
+nav ul {
+   list-style: none;
+   padding: 0;   /*all padding set to 0*/
+   margin: 0;    /*all margin set to 0*/
+
+   /*change the display of this elemnt to flex*/
+   display: flex;
+   justify-content: center; /*center items horizontally*/
+   gap: 10px;
+} 
+/*What selector is this? = descendant selector*/
+/*Instead of using this what other way could we select a tag-given our elements in index.html?*/
+nav ul li a {
+    color: var(--col-bg-deep);
+    text-decoration: none;
+    font-size: 1.1em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    /*What regions do eac of the 4 padding areas have
+    padding-top?
+    padding-bottom?
+    padding -left?
+    padding-right?
+    */
+    padding: 8px 18px; 
+    border: 1px solid var(--col-cyan-light);
+    /*Long hand border rule*/
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--col-cyan-light);
+    border-radius: 8px;
+}
+
+/*Pseudo-class selector :hover, :root*/
+nav ul li a:hover {
+    background-color: var(--col-cyan-light);
+    border-color: var(--col-pink-soft);
+}
