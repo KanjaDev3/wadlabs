@@ -123,7 +123,7 @@ header h1 {
 /*
   descendant selector
 */
-header > b{
+ b{
     color: var(--col-amber);
     letter-spacing: 2px;
     font-size: 0.9em; /* relative to the parent font size*/
@@ -203,7 +203,7 @@ section:hover{
     border-left-color: var(--col-cyan);
 }
 
-p{
+p, h4{
     color: var(--col-cream);
 
 }
@@ -224,3 +224,28 @@ h2{
     color: var(--col-sunset);
     border-bottom:1px solid var(--col-amber);
 }
+
+main  ul, main ol{
+    padding-left: 24px;
+    color: var(--col-cream);
+}
+
+main li{
+    margin-left: 4px;
+}
+
+/*pseudo-class selector (State)*/
+li:first-child{
+    color: var(--col-pink-soft);
+    font-weight: bold;
+}
+
+/*pseudo-elemnt selector (Part of an element)*/
+main ul li::marker{
+    color: var(--col-cyan);
+}
+
+main ol li::marker{
+    color: var(--col-coral);
+}
+
