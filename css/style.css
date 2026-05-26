@@ -249,3 +249,19 @@ main ol li::marker{
     color: var(--col-coral);
 }
 
+img{
+    max-width: 100%; /*parent*/
+    border-radius: 10px;
+}
+
+footer{
+   text-align: center; 
+}
+
+footer p{
+    color: var(--col-muted);
+}
+
+hr{
+    border: 1px solid var(--col-cyan);
+}
