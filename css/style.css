@@ -119,6 +119,8 @@ header h1 {
     margin-top: 0;
     margin-right: 0;
 
+    font-weight: normal;
+
 }
 /*
   descendant selector
@@ -235,7 +237,7 @@ main li{
 }
 
 /*pseudo-class selector (State)*/
-li:first-child{
+section li:first-child{
     color: var(--col-pink-soft);
     font-weight: bold;
 }
@@ -273,6 +275,66 @@ hr{
     gap: 10px;
 }
 
-article p{
+article h4{
     border-top: 2px solid var(--col-coral);
 }
+
+main{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* ============================================================
+   RESPONSIVE BREAKPOINT RANGES (Widths)
+   ------------------------------------------------------------
+   Small Mobile  :   0px   → 480px
+   Large Mobile  : 481px   → 600px
+   Tablet        : 601px   → 768px
+   Small Laptop  : 769px   → 1023px
+   Desktop       : 1024px  → 1279px
+   Wide Screens  : 1280px and above
+ 
+   Media queries allow CSS styles to change depending
+   on the screen size or device characteristics.
+   ============================================================ */
+
+
+/* Mobile Devices */
+@media screen and (max-width: 730px) {
+ .characters.grid{
+    grid-template-columns: 1fr;
+ }
+
+ nav ul{
+    flex-direction: column;
+    padding: 10px;
+ }
+
+ nav ul li a{
+    display:block;
+ }
+}
+
+
+/* Large Mobile Devices
+@media screen and (min-width: 481px) and (max-width: 600px) {
+.characters-grid{
+    grid-template-columns: 1fr;
+}
+}
+
+
+/* Tablets */
+@media screen and (min-width: 601px) and (max-width: 768px) {}
+
+
+/* Small Laptops */
+@media screen and (min-width: 769px) and (max-width: 1023px) {}
+
+
+/* Desktop Screens */
+@media screen and (min-width: 1024px) and (max-width: 1279px) {}
+
+
+/* Wide Screens */
+@media screen and (min-width: 1280px) {}
