@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grid Demo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+
+            body{
+                margin: 0;
+                /*vh veiwport height(absolute or relative*/
+                height: 100vh;
+                font-size: 24px;
+            }
+
+            .container{
+                display: grid;
+                grid-template-columns: 100px 1fr 100px;
+                grid-template-rows: 80px 1fr 40px;
+                grid-template-areas:
+                    "header header header"
+                    "l-aside main r-aside"
+                    "footer footer footer";
+                    gap: 8px;
+                    padding:8px;
+            }
+
+            header{
+                grid-area:header;
+                background:pink;
+            }
+
+            #left-aside{
+                grid-area:l-aside;
+                background:green;
+            }
+
+            main{
+                grid-area: main;
+                background:blue;
+                height: 79vh;
+            }
+
+            #right-aside{
+                grid-area: r-aside;
+                background: purple;
+            }
+
+            footer{
+                grid-area: footer;
+                background: brown;
+            }
+        </style>
+    </head>
+    <body>
+        /*grid container*/
+        <div class="container">
+            <header></header>
+            <aside id="left-aside"> Left Aside</aside>
+            <main>Main</main>
+            <aside id="right-aside"> Right Aside</aside>
+            <footer></footer>
+        </div>
+    </body>
+</html>

@@ -265,3 +265,14 @@ footer p{
 hr{
     border: 1px solid var(--col-cyan);
 }
+
+/*characters-grid*/
+.charcters-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+article p{
+    border-top: 2px solid var(--col-coral);
+}
