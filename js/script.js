@@ -80,12 +80,12 @@ console.log("Kenya has ",governors.length," governors");
 
 //for
 for(let index in score){
-    console.log(scores[index]);
+    console.log(score[1]);
 }
 
 //For of 
 for(let score of scores){
-    console.log(score);
+    console.log(score[2]);
 }
 
 //forEach
@@ -130,14 +130,14 @@ let bbit_2b_students = [
 //@TODO : Show looping of objects
 //Print out the names of all the students in bbit 2b using a loop 
 bbit_2b_students.forEach(function(student){
-    console.log(student.name)
+    console.log(student.name);
 });
 
 //Getting the keys of an object as an array
-//console.log(student.keys())
+console.log(Object.keys(student));
 
 //Getting the values of an object as an array
-//console.log(student.values())
+console.log(Object.values(student));
 
 //Getting both keys and values of an object as an array
-//console.log(student.entries().toArray())
+console.log(Object.entries(student));
