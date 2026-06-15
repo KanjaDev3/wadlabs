@@ -84,7 +84,7 @@ for(let index in score){
 }
 
 //For of 
-for(let score of scores){
+for(let index of score){
     console.log(score[2]);
 }
 
@@ -141,3 +141,29 @@ console.log(Object.values(student));
 
 //Getting both keys and values of an object as an array
 console.log(Object.entries(student));
+
+/* DOM - Document Object Model (Tree-like) */
+console.log(document);
+//console.log(document);
+
+
+//Elements on our page (variables)
+const heading = document.querySelector("#mainHeading");
+console.log(heading);
+const previewImage = document.querySelector("img");
+console.log(previewImage);
+const aboutSection = document.getElementById('about');
+console.log(aboutSection);
+
+// All the Sections
+const allSections = document.querySelectorAll('section');
+console.log(allSections);
+
+const allNavLinks = document.querySelectorAll("nav");
+console.log(allNavLinks);
+
+let aboutParagraph = document.querySelector("#about p");
+
+// Change its text
+aboutParagraph.textContent = "This text was changed!";
+aboutParagraph.style.color = "red";

@@ -338,3 +338,155 @@ main{
 
 /* Wide Screens */
 @media screen and (min-width: 1280px) {}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.tagline {
+    color: var(--col-bg-deep);
+    margin: 0 10px 10px;
+}
+
+nav ul {
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    display: inline-block;
+}
+
+img {
+    display: block;
+}
+
+.section-highlight {
+    border-left-color: var(--col-cyan) !important;
+    box-shadow: 0 0 18px rgba(0, 213, 216, 0.35);
+}
+
+p, h4, label, code {
+    color: var(--col-cream);
+}
+
+.lab-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.lab-card {
+    background-color: rgba(8, 19, 31, 0.65);
+    padding: 18px;
+    border-radius: 10px;
+    border: 1px solid rgba(79, 246, 234, 0.25);
+}
+
+button {
+    background-color: var(--col-coral);
+    color: var(--col-cream);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    margin: 6px 4px 6px 0;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+button:hover {
+    background-color: var(--col-sunset);
+    color: var(--col-bg-deep);
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 6px 0 14px;
+    border: 2px solid var(--col-cyan-light);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1em;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.form-row input {
+    flex: 1;
+}
+
+.dynamic-list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.dynamic-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    background-color: rgba(8, 19, 31, 0.65);
+    padding: 10px 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.delete-btn {
+    background-color: var(--col-bg-deep);
+    border: 1px solid var(--col-coral);
+}
+
+.output-box {
+    margin-top: 18px;
+    padding: 16px;
+    background-color: rgba(8, 19, 31, 0.65);
+    color: var(--col-cream);
+    border-radius: 8px;
+    border: 1px solid var(--col-cyan-light);
+}
+
+.success-text {
+    color: var(--col-cyan-light);
+    font-weight: 700;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Update your existing mobile media query with these additions */
+@media screen and (max-width: 730px) {
+   .lab-grid {
+        grid-template-columns: 1fr;
+   }
+
+   header h1 {
+        font-size: 2.1em;
+        letter-spacing: 3px;
+   }
+
+   section {
+        padding: 20px;
+   }
+
+   .form-row {
+        flex-direction: column;
+   }
+
+   .form-row button {
+        width: 100%;
+   }
+
+   .dynamic-list li {
+        flex-direction: column;
+        align-items: stretch;
+   }
+}
