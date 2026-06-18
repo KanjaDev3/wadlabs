@@ -167,3 +167,47 @@ let aboutParagraph = document.querySelector("#about p");
 // Change its text
 aboutParagraph.textContent = "This text was changed!";
 aboutParagraph.style.color = "red";
+
+//Setting/setters - updating the page form JS
+
+// Via the DOM
+previewImage.setAttribute("title","New Title of Image");
+previewImage.setAttribute("alt","New alternate text for the image");
+console.log(previewImage.alt);
+console.log(previewImage.title);
+
+//Element Handlling - Events (user events - click, key events, scroll)
+
+//Get the element of interest - button with an id of changeTextBtn
+let changeTextBtn = document.querySelector("#changeTextBtn");
+let demoText = document.querySelector("#demoText");
+
+//We are handling the click event fo the bbutton with and id of changeTextBtn
+changeTextBtn.addEventListener("click",function(event){
+    console.log("Someone clicked me!");
+    demoText.textContent = "I have been changed when you clicked!";
+    demoText.style.color = "Orange";
+    demoText.style.fontSize = "16px";
+});
+
+//Use case 2
+let highlightSectionsBtn = document.querySelector("#highlightSectionsBtn");
+highlightSectionsBtn.addEventListener("click",function(event){
+    //one
+    document.querySelector("#about").classList.toggle("section-highlight");
+
+    //Hightlight all the sections
+    //Document.querySelectorAll("section").classList.toggle("section-highlight");
+    document.querySelectorAll("section").forEach(function(section){
+        section.classList.toggle("section-highlight");
+    });
+});
+
+
+
+//Get the textbox with id nameInput
+document.querySelector("#nameInput").addEventListener("input",function(event){
+
+    document.querySelector("#nameOutput").textContent = 
+    "Hello " + document.querySelector("#nameInput").value + "!";
+});
